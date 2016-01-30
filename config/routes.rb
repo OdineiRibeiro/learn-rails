@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+
+
+  #Any request to the application root (http://localhost:3000/)
+  #will be directed to the VisitorsController new action.
+  root to: 'visitors#new'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
