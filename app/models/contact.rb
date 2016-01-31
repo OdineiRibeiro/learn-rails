@@ -1,6 +1,6 @@
 class Contact < ActiveRecord::Base
   has_no_table
-
+  
   attr_accessor :name, :string
   attr_accessor :email, :string
   attr_accessor :content, :string
