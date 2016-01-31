@@ -1,6 +1,6 @@
 class Owner
   def name
-    name = 'Odinei Ribeiro'
+    name = 'Caio Rolando da Rocha'
   end
 
   def birthdate
@@ -15,7 +15,7 @@ class Owner
       countdown = (birthday - today).to_i
     else
       countdown = (birthday.next_year = today).to_i
-    end    
+    end
   end
 
 end
