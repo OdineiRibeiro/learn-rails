@@ -38,7 +38,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'activerecord-tableless'
 
 # support for Zurb Foundation
-gem 'compass-rails', '~> 2.0.alpha.0'
+gem 'compass-rails', '~> 2.0.4'
 
 # configuration framework
 gem 'figaro'
