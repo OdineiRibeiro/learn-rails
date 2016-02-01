@@ -1,5 +1,22 @@
-<h3>Página Inicial</h3>
-
-<p>Bem-vindo à página inicial de <%= @owner.name %>.</p>
-<p>Eu nasci em <%= @owner.birthdate.day %>.<%= @owner.birthdate.month %>.<%= @owner.birthdate.year %>.</p>
-<p>Faltam apenas <%= @owner.countdown %> dias para meu aniversário!</p>
+<% content_for :title do %> Caio Rolando da Rocha <% end %>
+<% content_for :description do %> Website of Caio Rolando da Rocha <% end %>
+<section>
+  <img src="http://lorempixel.com/1170/600/cats/1">
+</section>
+<section>
+  <div class="column">
+    <h2>Stay in touch.</h2>
+  </div>
+    <div class="column">
+      <div class="form-centered">
+        <%= simple_form_for @visitor do |f| %>
+        <%= f.error_notification %>
+        <%= f.input :first_name, label: false, :placeholder => 'First name' %>
+        <%= f.input :last_name, label: false, :placeholder => 'Last name' %>
+        <%= f.input :email, label: false, :placeholder => 'Your email address...' %>
+        <br/>
+        <%= f.button :submit, "Sign up for the newsletter", :class => "submit" %>
+        <% end %>
+      </div>
+    </div>
+</section>
